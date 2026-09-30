@@ -1,0 +1,14 @@
+{
+  "name": "deepseek-agent-desktop",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Desktop agent interface with Deepseek integration",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^26.0.0",
+    "electron-reload": "^2.0.0-alpha.1"
+  }
+}

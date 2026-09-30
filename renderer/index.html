@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deepseek Agent</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar glass-card">
+        <div class="sidebar-brand">
+          <div class="logo">A</div>
+          <div>
+            <p class="app-name">Antigravity</p>
+            <p class="app-tag">Workspace assistant</p>
+          </div>
+        </div>
+
+        <button class="sidebar-button" type="button">+ New Conversation</button>
+
+        <div class="sidebar-section">
+          <h4>Conversations</h4>
+          <ul>
+            <li class="sidebar-item active">Fixing ResizeObserver Loop Error</li>
+            <li class="sidebar-item">Voice E-Commerce Review</li>
+            <li class="sidebar-item">Testing Dashboard Layout</li>
+          </ul>
+        </div>
+
+        <div class="sidebar-section">
+          <h4>Projects</h4>
+          <ul>
+            <li class="sidebar-item">pulse-viper</li>
+            <li class="sidebar-item">fervent-mendel</li>
+            <li class="sidebar-item">VoiceEcommerce</li>
+          </ul>
+        </div>
+      </aside>
+
+      <main class="main-panel">
+        <div class="window-bar">
+          <div class="window-title">Antigravity</div>
+          <div class="window-controls">
+            <button type="button" id="minimize-btn" aria-label="Minimize">—</button>
+            <button type="button" id="maximize-btn" aria-label="Maximize">◻</button>
+            <button type="button" id="close-btn" aria-label="Close">×</button>
+          </div>
+        </div>
+
+        <section class="hero-panel glass-card">
+          <div class="brand">
+            <div class="logo hero-logo">D</div>
+            <div>
+              <h1>Deepseek Agent</h1>
+              <p>Search your ideas, code, and projects with a desktop AI workspace.</p>
+            </div>
+          </div>
+
+          <form id="search-form" class="search-box">
+            <input id="query" type="text" placeholder="Ask Deepseek anything..." autocomplete="off" />
+            <button type="submit">Search</button>
+          </form>
+
+          <div class="status-panel">
+            <div id="status" class="status">Ready to search.</div>
+            <p class="status-note">Your agent is ready. Enter a search query to fetch Deepseek results.</p>
+          </div>
+        </section>
+
+        <section class="results-section">
+          <div id="results" class="results-grid"></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
